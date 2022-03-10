@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Крестики-нолики</title>
-    <style>  /* вопрос не по теме. Это нормпльно, когда появляется справа линия для скрола и сайт начанает плясать?  */
+    <style>
         .wrapper {
             font-family: sans-serif;
         }
@@ -188,13 +188,13 @@
                 <div class="block-payers-and-pause">
                     <div class="player">Игрок 1</div>
                     <div class="icons">
-                        <img class="play" src="C:\Users\Huawei\Desktop\HTML\exercises\js-practice\img\play.png" alt=""> 
-                        <img class="pause" src="C:\Users\Huawei\Desktop\HTML\exercises\js-practice\img\pause.png" alt="">      
+                        <img class="play" src="img\play.png" alt=""> 
+                        <img class="pause" src="img\pause.png" alt="">      
                     </div>
                     <div class="player">Игрок 2</div>
                 </div> 
                 <div class="block-reset">
-                    <img class="reset" src="C:\Users\Huawei\Desktop\HTML\exercises\js-practice\img\return.png" alt="">
+                    <img class="reset" src="img\return.png" alt="">
                 </div>
             </div>
             <div>
@@ -262,7 +262,7 @@
         let xoCounter = 0
         let gameStarted = false
         play.onclick = () => {
-            timerID = setInterval(timeIsUp, 1000) // с ним есть небольшая проблема. Недопонимаю
+            timerID = setInterval(timeIsUp, 1000)
             gameZone.style.display = null
             play.style.display = 'none'
             pause.style.display = null
